@@ -20,15 +20,14 @@
 - **JavaScript (Vanilla JS)** - интерактивные элементы, работа с localStorage, табы, мобильное меню
 
 ## Структура проекта
-college-website/
-├── index.html # Главный HTML-файл
-├── README.md # Документация проекта
-├── css/
-│ └── style.css # Все стили сайта
-└── js/
-└── script.js # JavaScript логика сайта
 
-text
+**college-website/**
+- **index.html** - Главный HTML-файл
+- **README.md** - Документация проекта
+- **css/**
+  - style.css - Все стили сайта
+- **js/**
+  - script.js - JavaScript логика сайта
 
 ## Функциональность
 
