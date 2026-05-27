@@ -1,0 +1,1340 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>СПК — Ставропольский политехнический колледж</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a2744'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23c9a84c' font-family='Arial, sans-serif' font-weight='bold'%3EСПК%3C/text%3E%3C/svg%3E"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a2744'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23c9a84c' font-family='Arial, sans-serif' font-weight='bold'%3EСПК%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .reveal {
+        opacity: 0;
+        transform: translateY(28px);
+        transition:
+          opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1),
+          transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .reveal.revealed {
+        opacity: 1;
+        transform: none;
+      }
+      .reveal-d1 {
+        transition-delay: 0.1s;
+      }
+      .reveal-d2 {
+        transition-delay: 0.2s;
+      }
+      .reveal-d3 {
+        transition-delay: 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="header-inner">
+          <a class="logo" href="#home" aria-label="На главную">
+            <div class="logo-emblem">СПК</div>
+            <div class="logo-text">
+              <div class="logo-title">Политехнический колледж</div>
+              <div class="logo-sub">Ставрополь · основан 1952</div>
+            </div>
+          </a>
+          <nav aria-label="Основная навигация">
+            <a class="nav-link" href="#news">Новости</a>
+            <a class="nav-link" href="#specialties">Специальности</a>
+            <a class="nav-link" href="#about">О колледже</a>
+            <a class="nav-link" href="#schedule">Расписание</a>
+            <a class="nav-btn" href="#contact">Написать нам</a>
+          </nav>
+          <button
+            class="burger"
+            id="burger"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+      <div
+        class="mobile-nav"
+        id="mobile-nav"
+        role="navigation"
+        aria-label="Мобильная навигация"
+      >
+        <a class="nav-link" href="#news">Новости</a>
+        <a class="nav-link" href="#specialties">Специальности</a>
+        <a class="nav-link" href="#about">О колледже</a>
+        <a class="nav-link" href="#schedule">Расписание</a>
+        <a class="nav-btn" href="#contact">Написать нам</a>
+      </div>
+    </header>
+
+    <main class="page-content">
+      <section class="hero" id="home" aria-label="Приветственный баннер">
+        <div class="hero-bg">
+          <div class="hero-bg-grid"></div>
+          <div class="hero-bg-glow"></div>
+          <div class="hero-bg-glow2"></div>
+        </div>
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-tag">
+              <div class="hero-tag-dot" aria-hidden="true"></div>
+              Приём 2025–2026 открыт
+            </div>
+            <h1 class="hero-title">
+              Твоё будущее<br />
+              начинается<br />
+              <span>здесь</span>
+            </h1>
+            <p class="hero-subtitle">Ставропольский политехнический колледж</p>
+            <p class="hero-desc">
+              Готовим специалистов в области цифровых технологий,
+              программирования и информационных систем. Современная учебная
+              база, опытные преподаватели, реальные проекты с первого курса.
+            </p>
+            <div class="hero-actions">
+              <a class="btn-primary" href="#specialties">
+                Выбрать специальность
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </a>
+              <a class="btn-outline" href="#about">
+                Узнать о нас <span class="btn-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+            <div class="hero-stats" aria-label="Ключевые показатели">
+              <div class="hero-stat">
+                <div class="hero-stat-num" data-count="73" data-suffix="+">
+                  0+
+                </div>
+                <div class="hero-stat-label">лет работы</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-num" data-count="2400" data-suffix="+">
+                  0+
+                </div>
+                <div class="hero-stat-label">студентов</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-num" data-count="12" data-suffix="">
+                  0
+                </div>
+                <div class="hero-stat-label">специальностей</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-num" data-count="94" data-suffix="%">
+                  0%
+                </div>
+                <div class="hero-stat-label">трудоустройство</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section news-section" id="news">
+        <div class="container">
+          <p class="section-label reveal">Актуально</p>
+          <h2 class="section-title reveal reveal-d1">Новости колледжа</h2>
+          <p class="section-desc reveal reveal-d2">
+            Следите за жизнью колледжа — события, достижения, важные объявления
+            для студентов и абитуриентов.
+          </p>
+          <div class="news-grid" role="list">
+            <article class="news-card reveal reveal-d1" role="listitem">
+              <div class="news-card-img">
+                <div class="news-card-img-pattern" aria-hidden="true"></div>
+                <div class="news-card-img-inner" aria-hidden="true">🏆</div>
+                <span class="news-card-cat">Достижения</span>
+              </div>
+              <div class="news-card-body">
+                <time class="news-card-date" datetime="2025-05-14"
+                  >14 мая 2025</time
+                >
+                <h3 class="news-card-title">
+                  Победа на региональной олимпиаде по программированию
+                </h3>
+                <p class="news-card-text">
+                  Студенты группы ПИЖ-б-о-25-1 заняли I и III места на краевой
+                  олимпиаде по информационным технологиям среди ссузов.
+                </p>
+                <span
+                  class="news-card-link"
+                  aria-label="Читать далее про олимпиаду"
+                  >Читать далее <span aria-hidden="true">→</span></span
+                >
+              </div>
+            </article>
+
+            <article class="news-card reveal reveal-d2" role="listitem">
+              <div class="news-card-img" style="background: #1f2e50">
+                <div class="news-card-img-pattern" aria-hidden="true"></div>
+                <div class="news-card-img-inner" aria-hidden="true">📋</div>
+                <span class="news-card-cat">Приём</span>
+              </div>
+              <div class="news-card-body">
+                <time class="news-card-date" datetime="2025-05-01"
+                  >01 мая 2025</time
+                >
+                <h3 class="news-card-title">
+                  Открыт приём документов на 2025–2026 учебный год
+                </h3>
+                <p class="news-card-text">
+                  Приёмная комиссия начинает работу с 1 июня. Документы
+                  принимаются лично и через сайт «Госуслуги». Бюджетных мест —
+                  180.
+                </p>
+                <span class="news-card-link" aria-label="Читать далее про приём"
+                  >Читать далее <span aria-hidden="true">→</span></span
+                >
+              </div>
+            </article>
+
+            <article class="news-card reveal reveal-d3" role="listitem">
+              <div class="news-card-img" style="background: #1a3040">
+                <div class="news-card-img-pattern" aria-hidden="true"></div>
+                <div class="news-card-img-inner" aria-hidden="true">🖥️</div>
+                <span class="news-card-cat">Инфраструктура</span>
+              </div>
+              <div class="news-card-body">
+                <time class="news-card-date" datetime="2025-04-22"
+                  >22 апреля 2025</time
+                >
+                <h3 class="news-card-title">
+                  Открытие обновлённого компьютерного класса
+                </h3>
+                <p class="news-card-text">
+                  В корпусе «А» запущен новый класс с 32 рабочими станциями на
+                  базе процессоров Intel Core i7 и рабочими местами для
+                  разработки.
+                </p>
+                <span
+                  class="news-card-link"
+                  aria-label="Читать далее про компьютерный класс"
+                  >Читать далее <span aria-hidden="true">→</span></span
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section specialties-section" id="specialties">
+        <div class="container">
+          <p class="section-label reveal" style="color: var(--gold)">
+            Направления подготовки
+          </p>
+          <h2 class="section-title reveal reveal-d1">Специальности</h2>
+          <p
+            class="section-desc reveal reveal-d2"
+            style="color: rgba(255, 255, 255, 0.52)"
+          >
+            Мы готовим высококвалифицированных специалистов по наиболее
+            востребованным направлениям в сфере цифровых технологий.
+          </p>
+
+          <div class="specs-grid">
+            <div class="spec-card reveal reveal-d1">
+              <div class="spec-card-header">
+                <div class="spec-icon" aria-hidden="true">💻</div>
+                <span class="spec-code">09.02.07</span>
+              </div>
+              <h3 class="spec-name">
+                Информационные системы и программирование
+              </h3>
+              <p class="spec-desc">
+                Разработка программного обеспечения, web-приложений и
+                информационных систем. Востребованная специальность с высоким
+                уровнем трудоустройства.
+              </p>
+              <div class="spec-meta">
+                <div class="spec-meta-item">
+                  <span class="spec-meta-label">Срок обучения</span>
+                  <span class="spec-meta-val">3 г. 10 мес.</span>
+                </div>
+                <div class="spec-meta-item">
+                  <span class="spec-meta-label">Форма</span>
+                  <span class="spec-meta-val">Очная</span>
+                </div>
+                <div class="spec-meta-item">
+                  <span class="spec-meta-label">Бюджет</span>
+                  <span class="spec-meta-val">Есть</span>
+                </div>
+              </div>
+              <button class="spec-more-btn" aria-expanded="false">
+                Подробнее <span class="btn-arrow" aria-hidden="true">→</span>
+              </button>
+              <div class="spec-details" aria-hidden="true">
+                Студенты изучают алгоритмы и структуры данных, языки
+                программирования (Python, Java, C#), базы данных, web-технологии
+                (HTML, CSS, JavaScript, фреймворки), мобильную разработку.
+                Дисциплины: математика, теория алгоритмов, ОС, сети, разработка
+                ПО, тестирование, БД. Выпускники работают в должностях:
+                junior-разработчик, системный аналитик, специалист технической
+                поддержки.
+              </div>
+            </div>
+
+            <div class="spec-card reveal reveal-d2">
+              <div class="spec-card-header">
+                <div class="spec-icon" aria-hidden="true">🔒</div>
+                <span class="spec-code">10.02.05</span>
+              </div>
+              <h3 class="spec-name">Обеспечение информационной безопасности</h3>
+              <p class="spec-desc">
+                Защита информации, кибербезопасность, администрирование
+                защищённых систем. Одно из самых перспективных направлений
+                современного рынка труда.
+              </p>
+              <div class="spec-meta">
+                <div class="spec-meta-item">
+                  <span class="spec-meta-label">Срок обучения</span>
+                  <span class="spec-meta-val">2 г. 10 мес.</span>
+                </div>
+                <div class="spec-meta-item">
+                  <span class="spec-meta-label">Форма</span>
+                  <span class="spec-meta-val">Очная</span>
+                </div>
+                <div class="spec-meta-item">
+                  <span class="spec-meta-label">Бюджет</span>
+                  <span class="spec-meta-val">Есть</span>
+                </div>
+              </div>
+              <button class="spec-more-btn" aria-expanded="false">
+                Подробнее <span class="btn-arrow" aria-hidden="true">→</span>
+              </button>
+              <div class="spec-details" aria-hidden="true">
+                Программа охватывает криптографию, сетевую безопасность, анализ
+                защищённости систем, работу со специализированным ПО (межсетевые
+                экраны, системы обнаружения вторжений). Практика в ведущих
+                предприятиях Ставропольского края с последующим
+                трудоустройством.
+              </div>
+            </div>
+
+            <div class="spec-card reveal reveal-d1">
+              <div class="spec-card-header">
+                <div class="spec-icon" aria-hidden="true">🌐</div>
+                <span class="spec-code">09.02.06</span>
+              </div>
+              <h3 class="spec-name">Сетевое и системное администрирование</h3>
+              <p class="spec-desc">
+                Настройка и обслуживание серверной инфраструктуры, сетей,
+                администрирование операционных систем Linux и Windows Server.
+              </p>
+              <div class="spec-meta">
+                <div class="spec-meta-item">
+                  <span class="spec-meta-label">Срок обучения</span>
+                  <span class="spec-meta-val">3 г. 10 мес.</span>
+                </div>
+                <div class="spec-meta-item">
+                  <span class="spec-meta-label">Форма</span>
+                  <span class="spec-meta-val">Очная</span>
+                </div>
+                <div class="spec-meta-item">
+                  <span class="spec-meta-label">Бюджет</span>
+                  <span class="spec-meta-val">Есть</span>
+                </div>
+              </div>
+              <button class="spec-more-btn" aria-expanded="false">
+                Подробнее <span class="btn-arrow" aria-hidden="true">→</span>
+              </button>
+              <div class="spec-details" aria-hidden="true">
+                Студенты получают знания по протоколам TCP/IP, маршрутизации,
+                коммутации, виртуализации (VMware, Hyper-V), облачным сервисам
+                (Yandex Cloud, AWS), настройке почтовых серверов, Active
+                Directory. Выпускники трудоустраиваются системными
+                администраторами, DevOps-инженерами, специалистами NOC.
+              </div>
+            </div>
+
+            <div class="spec-card reveal reveal-d2">
+              <div class="spec-card-header">
+                <div class="spec-icon" aria-hidden="true">📊</div>
+                <span class="spec-code">09.02.04</span>
+              </div>
+              <h3 class="spec-name">Информационные системы (по отраслям)</h3>
+              <p class="spec-desc">
+                Проектирование, внедрение и сопровождение информационных систем
+                на предприятиях различных отраслей экономики.
+              </p>
+              <div class="spec-meta">
+                <div class="spec-meta-item">
+                  <span class="spec-meta-label">Срок обучения</span>
+                  <span class="spec-meta-val">2 г. 10 мес.</span>
+                </div>
+                <div class="spec-meta-item">
+                  <span class="spec-meta-label">Форма</span>
+                  <span class="spec-meta-val">Очная</span>
+                </div>
+                <div class="spec-meta-item">
+                  <span class="spec-meta-label">Бюджет</span>
+                  <span class="spec-meta-val">Есть</span>
+                </div>
+              </div>
+              <button class="spec-more-btn" aria-expanded="false">
+                Подробнее <span class="btn-arrow" aria-hidden="true">→</span>
+              </button>
+              <div class="spec-details" aria-hidden="true">
+                Программа включает изучение 1С:Предприятие, ERP-систем,
+                системного анализа, документооборота, проектирования БД, SQL и
+                NoSQL. Студенты проходят практику на предприятиях региона с
+                реальными задачами в области автоматизации бизнес-процессов.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-visual" aria-hidden="true">
+              <div class="about-card-main">
+                <div class="about-card-main-pattern"></div>
+                <div class="about-card-main-icon">🎓</div>
+              </div>
+              <div class="about-badge about-badge-1">
+                <div class="about-badge-num" data-count="94" data-suffix="%">
+                  94%
+                </div>
+                <div class="about-badge-label">трудоустройство</div>
+              </div>
+              <div class="about-badge about-badge-2">
+                <div class="about-badge-num" data-count="73" data-suffix=" лет">
+                  73 года
+                </div>
+                <div class="about-badge-label">на рынке образования</div>
+              </div>
+            </div>
+            <div class="about-text">
+              <p class="section-label reveal">О нас</p>
+              <h2 class="section-title reveal reveal-d1">
+                История и<br />достижения
+              </h2>
+              <p class="section-desc reveal reveal-d2">
+                Ставропольский политехнический колледж — одно из старейших
+                средне-специальных учебных заведений Северо-Кавказского региона.
+                С 1952 года мы готовим профессионалов, которые строят
+                технологическое будущее края и страны.
+              </p>
+              <ul class="about-list" role="list">
+                <li class="about-list-item reveal reveal-d1">
+                  <div class="about-check" aria-hidden="true">✓</div>
+                  <span
+                    >Государственная аккредитация и лицензия на образовательную
+                    деятельность по всем направлениям подготовки</span
+                  >
+                </li>
+                <li class="about-list-item reveal reveal-d2">
+                  <div class="about-check" aria-hidden="true">✓</div>
+                  <span
+                    >Современная материально-техническая база: 8 компьютерных
+                    классов, учебные лаборатории, медиатека</span
+                  >
+                </li>
+                <li class="about-list-item reveal reveal-d1">
+                  <div class="about-check" aria-hidden="true">✓</div>
+                  <span
+                    >Партнёрские соглашения с ведущими IT-компаниями
+                    Ставропольского края для прохождения практики</span
+                  >
+                </li>
+                <li class="about-list-item reveal reveal-d2">
+                  <div class="about-check" aria-hidden="true">✓</div>
+                  <span
+                    >Дополнительное профессиональное образование: курсы
+                    переподготовки и повышения квалификации</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section schedule-section" id="schedule">
+        <div class="container">
+          <p class="section-label reveal">Учебный процесс</p>
+          <h2 class="section-title reveal reveal-d1">Расписание занятий</h2>
+          <p class="section-desc reveal reveal-d2">
+            Демонстрационное расписание на текущую неделю. Выбор группы
+            сохраняется автоматически.
+          </p>
+
+          <div role="tablist" aria-label="Группы" class="tabs">
+            <button
+              class="tab-btn active"
+              data-tab="tab-pi-101"
+              role="tab"
+              aria-selected="true"
+              aria-controls="tab-pi-101"
+              id="tab-btn-pi-101"
+            >
+              ПИ-101
+            </button>
+            <button
+              class="tab-btn"
+              data-tab="tab-pi-201"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tab-pi-201"
+              id="tab-btn-pi-201"
+            >
+              ПИ-201
+            </button>
+            <button
+              class="tab-btn"
+              data-tab="tab-ib-101"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tab-ib-101"
+              id="tab-btn-ib-101"
+            >
+              ИБ-101
+            </button>
+            <button
+              class="tab-btn"
+              data-tab="tab-sa-101"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tab-sa-101"
+              id="tab-btn-sa-101"
+            >
+              СА-101
+            </button>
+          </div>
+
+          <div
+            id="tab-pi-101"
+            class="tab-panel active"
+            role="tabpanel"
+            aria-labelledby="tab-btn-pi-101"
+          >
+            <div class="schedule-table-wrap">
+              <table
+                class="schedule-table"
+                aria-label="Расписание группы ПИ-101"
+              >
+                <thead>
+                  <tr>
+                    <th scope="col">Пара / Время</th>
+                    <th scope="col">Понедельник</th>
+                    <th scope="col">Вторник</th>
+                    <th scope="col">Среда</th>
+                    <th scope="col">Четверг</th>
+                    <th scope="col">Пятница</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="time-col">
+                      <div>1 пара</div>
+                      <div
+                        style="
+                          font-size: 11px;
+                          color: var(--text-muted);
+                          font-weight: 400;
+                        "
+                      >
+                        08:00–09:35
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subj">Математика</div>
+                      <div class="teacher">Петрова И.В.</div>
+                      <div class="room">ауд. 201</div>
+                    </td>
+                    <td>
+                      <div class="subj">Информатика</div>
+                      <div class="teacher">Сидоров А.Н.</div>
+                      <div class="room">комп. 105</div>
+                    </td>
+                    <td>
+                      <div class="subj">Математика</div>
+                      <div class="teacher">Петрова И.В.</div>
+                      <div class="room">ауд. 201</div>
+                    </td>
+                    <td>
+                      <div class="subj">Английский язык</div>
+                      <div class="teacher">Козлова М.С.</div>
+                      <div class="room">ауд. 312</div>
+                    </td>
+                    <td>
+                      <div class="subj">Физкультура</div>
+                      <div class="teacher">Романов Д.А.</div>
+                      <div class="room">спортзал</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="time-col">
+                      <div>2 пара</div>
+                      <div
+                        style="
+                          font-size: 11px;
+                          color: var(--text-muted);
+                          font-weight: 400;
+                        "
+                      >
+                        09:45–11:20
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subj">ОП.01 Алгоритмизация</div>
+                      <div class="teacher">Воронов К.Е.</div>
+                      <div class="room">комп. 106</div>
+                    </td>
+                    <td>
+                      <div class="subj">Теория алгоритмов</div>
+                      <div class="teacher">Воронов К.Е.</div>
+                      <div class="room">ауд. 203</div>
+                    </td>
+                    <td>
+                      <div class="subj">Веб-разработка</div>
+                      <div class="teacher">Смирнов П.И.</div>
+                      <div class="room">комп. 105</div>
+                    </td>
+                    <td>
+                      <div class="subj">Программирование</div>
+                      <div class="teacher">Смирнов П.И.</div>
+                      <div class="room">комп. 106</div>
+                    </td>
+                    <td>
+                      <div class="subj">История</div>
+                      <div class="teacher">Тимофеева Л.Н.</div>
+                      <div class="room">ауд. 208</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="time-col">
+                      <div>3 пара</div>
+                      <div
+                        style="
+                          font-size: 11px;
+                          color: var(--text-muted);
+                          font-weight: 400;
+                        "
+                      >
+                        12:00–13:35
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subj">Русский язык</div>
+                      <div class="teacher">Зайцева О.П.</div>
+                      <div class="room">ауд. 215</div>
+                    </td>
+                    <td>
+                      <div class="subj">Базы данных</div>
+                      <div class="teacher">Новиков С.Л.</div>
+                      <div class="room">комп. 105</div>
+                    </td>
+                    <td>
+                      <div class="subj">Алгоритмизация</div>
+                      <div class="teacher">Воронов К.Е.</div>
+                      <div class="room">комп. 106</div>
+                    </td>
+                    <td>
+                      <div class="subj">Математика</div>
+                      <div class="teacher">Петрова И.В.</div>
+                      <div class="room">ауд. 201</div>
+                    </td>
+                    <td>
+                      <div class="subj">Веб-разработка</div>
+                      <div class="teacher">Смирнов П.И.</div>
+                      <div class="room">комп. 105</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="time-col">
+                      <div>4 пара</div>
+                      <div
+                        style="
+                          font-size: 11px;
+                          color: var(--text-muted);
+                          font-weight: 400;
+                        "
+                      >
+                        13:45–15:20
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subj">Философия</div>
+                      <div class="teacher">Белов А.М.</div>
+                      <div class="room">ауд. 310</div>
+                    </td>
+                    <td class="empty-cell">—</td>
+                    <td>
+                      <div class="subj">Английский язык</div>
+                      <div class="teacher">Козлова М.С.</div>
+                      <div class="room">ауд. 312</div>
+                    </td>
+                    <td>
+                      <div class="subj">Базы данных</div>
+                      <div class="teacher">Новиков С.Л.</div>
+                      <div class="room">комп. 105</div>
+                    </td>
+                    <td class="empty-cell">—</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div
+            id="tab-pi-201"
+            class="tab-panel"
+            role="tabpanel"
+            aria-labelledby="tab-btn-pi-201"
+          >
+            <div class="schedule-table-wrap">
+              <table
+                class="schedule-table"
+                aria-label="Расписание группы ПИ-201"
+              >
+                <thead>
+                  <tr>
+                    <th scope="col">Пара / Время</th>
+                    <th scope="col">Понедельник</th>
+                    <th scope="col">Вторник</th>
+                    <th scope="col">Среда</th>
+                    <th scope="col">Четверг</th>
+                    <th scope="col">Пятница</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="time-col">
+                      <div>1 пара</div>
+                      <div
+                        style="
+                          font-size: 11px;
+                          color: var(--text-muted);
+                          font-weight: 400;
+                        "
+                      >
+                        08:00–09:35
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subj">Разработка ПО</div>
+                      <div class="teacher">Смирнов П.И.</div>
+                      <div class="room">комп. 106</div>
+                    </td>
+                    <td>
+                      <div class="subj">ОС и среды</div>
+                      <div class="teacher">Громов Н.А.</div>
+                      <div class="room">комп. 105</div>
+                    </td>
+                    <td>
+                      <div class="subj">Тестирование ПО</div>
+                      <div class="teacher">Орлова В.Т.</div>
+                      <div class="room">комп. 106</div>
+                    </td>
+                    <td>
+                      <div class="subj">Разработка ПО</div>
+                      <div class="teacher">Смирнов П.И.</div>
+                      <div class="room">комп. 106</div>
+                    </td>
+                    <td>
+                      <div class="subj">Физкультура</div>
+                      <div class="teacher">Романов Д.А.</div>
+                      <div class="room">спортзал</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="time-col">
+                      <div>2 пара</div>
+                      <div
+                        style="
+                          font-size: 11px;
+                          color: var(--text-muted);
+                          font-weight: 400;
+                        "
+                      >
+                        09:45–11:20
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subj">Математика</div>
+                      <div class="teacher">Петрова И.В.</div>
+                      <div class="room">ауд. 201</div>
+                    </td>
+                    <td>
+                      <div class="subj">Экономика</div>
+                      <div class="teacher">Фёдорова Г.В.</div>
+                      <div class="room">ауд. 208</div>
+                    </td>
+                    <td>
+                      <div class="subj">Разработка ПО</div>
+                      <div class="teacher">Смирнов П.И.</div>
+                      <div class="room">комп. 106</div>
+                    </td>
+                    <td>
+                      <div class="subj">Сети и коммуникации</div>
+                      <div class="teacher">Громов Н.А.</div>
+                      <div class="room">лаб. 102</div>
+                    </td>
+                    <td>
+                      <div class="subj">Английский язык</div>
+                      <div class="teacher">Козлова М.С.</div>
+                      <div class="room">ауд. 312</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="time-col">
+                      <div>3 пара</div>
+                      <div
+                        style="
+                          font-size: 11px;
+                          color: var(--text-muted);
+                          font-weight: 400;
+                        "
+                      >
+                        12:00–13:35
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subj">Тестирование ПО</div>
+                      <div class="teacher">Орлова В.Т.</div>
+                      <div class="room">комп. 106</div>
+                    </td>
+                    <td>
+                      <div class="subj">Разработка ПО</div>
+                      <div class="teacher">Смирнов П.И.</div>
+                      <div class="room">комп. 106</div>
+                    </td>
+                    <td>
+                      <div class="subj">Английский язык</div>
+                      <div class="teacher">Козлова М.С.</div>
+                      <div class="room">ауд. 312</div>
+                    </td>
+                    <td class="empty-cell">—</td>
+                    <td>
+                      <div class="subj">Тестирование ПО</div>
+                      <div class="teacher">Орлова В.Т.</div>
+                      <div class="room">комп. 105</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div
+            id="tab-ib-101"
+            class="tab-panel"
+            role="tabpanel"
+            aria-labelledby="tab-btn-ib-101"
+          >
+            <div class="schedule-table-wrap">
+              <table
+                class="schedule-table"
+                aria-label="Расписание группы ИБ-101"
+              >
+                <thead>
+                  <tr>
+                    <th scope="col">Пара / Время</th>
+                    <th scope="col">Понедельник</th>
+                    <th scope="col">Вторник</th>
+                    <th scope="col">Среда</th>
+                    <th scope="col">Четверг</th>
+                    <th scope="col">Пятница</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="time-col">
+                      <div>1 пара</div>
+                      <div
+                        style="
+                          font-size: 11px;
+                          color: var(--text-muted);
+                          font-weight: 400;
+                        "
+                      >
+                        08:00–09:35
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subj">Криптография</div>
+                      <div class="teacher">Архипов В.С.</div>
+                      <div class="room">комп. 106</div>
+                    </td>
+                    <td>
+                      <div class="subj">Информатика</div>
+                      <div class="teacher">Сидоров А.Н.</div>
+                      <div class="room">комп. 105</div>
+                    </td>
+                    <td>
+                      <div class="subj">Сетевая безопасность</div>
+                      <div class="teacher">Архипов В.С.</div>
+                      <div class="room">лаб. 102</div>
+                    </td>
+                    <td>
+                      <div class="subj">Математика</div>
+                      <div class="teacher">Петрова И.В.</div>
+                      <div class="room">ауд. 201</div>
+                    </td>
+                    <td>
+                      <div class="subj">Физкультура</div>
+                      <div class="teacher">Романов Д.А.</div>
+                      <div class="room">спортзал</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="time-col">
+                      <div>2 пара</div>
+                      <div
+                        style="
+                          font-size: 11px;
+                          color: var(--text-muted);
+                          font-weight: 400;
+                        "
+                      >
+                        09:45–11:20
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subj">Основы ИБ</div>
+                      <div class="teacher">Архипов В.С.</div>
+                      <div class="room">ауд. 203</div>
+                    </td>
+                    <td>
+                      <div class="subj">Сетевая безопасность</div>
+                      <div class="teacher">Архипов В.С.</div>
+                      <div class="room">лаб. 102</div>
+                    </td>
+                    <td>
+                      <div class="subj">Английский язык</div>
+                      <div class="teacher">Козлова М.С.</div>
+                      <div class="room">ауд. 312</div>
+                    </td>
+                    <td>
+                      <div class="subj">Криптография</div>
+                      <div class="teacher">Архипов В.С.</div>
+                      <div class="room">комп. 106</div>
+                    </td>
+                    <td>
+                      <div class="subj">История</div>
+                      <div class="teacher">Тимофеева Л.Н.</div>
+                      <div class="room">ауд. 208</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="time-col">
+                      <div>3 пара</div>
+                      <div
+                        style="
+                          font-size: 11px;
+                          color: var(--text-muted);
+                          font-weight: 400;
+                        "
+                      >
+                        12:00–13:35
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subj">Математика</div>
+                      <div class="teacher">Петрова И.В.</div>
+                      <div class="room">ауд. 201</div>
+                    </td>
+                    <td>
+                      <div class="subj">Основы ИБ</div>
+                      <div class="teacher">Архипов В.С.</div>
+                      <div class="room">ауд. 203</div>
+                    </td>
+                    <td>
+                      <div class="subj">Криптография</div>
+                      <div class="teacher">Архипов В.С.</div>
+                      <div class="room">комп. 106</div>
+                    </td>
+                    <td>
+                      <div class="subj">Английский язык</div>
+                      <div class="teacher">Козлова М.С.</div>
+                      <div class="room">ауд. 312</div>
+                    </td>
+                    <td>
+                      <div class="subj">Сетевая безопасность</div>
+                      <div class="teacher">Архипов В.С.</div>
+                      <div class="room">лаб. 102</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div
+            id="tab-sa-101"
+            class="tab-panel"
+            role="tabpanel"
+            aria-labelledby="tab-btn-sa-101"
+          >
+            <div class="schedule-table-wrap">
+              <table
+                class="schedule-table"
+                aria-label="Расписание группы СА-101"
+              >
+                <thead>
+                  <tr>
+                    <th scope="col">Пара / Время</th>
+                    <th scope="col">Понедельник</th>
+                    <th scope="col">Вторник</th>
+                    <th scope="col">Среда</th>
+                    <th scope="col">Четверг</th>
+                    <th scope="col">Пятница</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="time-col">
+                      <div>1 пара</div>
+                      <div
+                        style="
+                          font-size: 11px;
+                          color: var(--text-muted);
+                          font-weight: 400;
+                        "
+                      >
+                        08:00–09:35
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subj">Сетевые технологии</div>
+                      <div class="teacher">Громов Н.А.</div>
+                      <div class="room">лаб. 102</div>
+                    </td>
+                    <td>
+                      <div class="subj">ОС Linux</div>
+                      <div class="teacher">Громов Н.А.</div>
+                      <div class="room">комп. 105</div>
+                    </td>
+                    <td>
+                      <div class="subj">Администрирование</div>
+                      <div class="teacher">Громов Н.А.</div>
+                      <div class="room">лаб. 102</div>
+                    </td>
+                    <td>
+                      <div class="subj">Математика</div>
+                      <div class="teacher">Петрова И.В.</div>
+                      <div class="room">ауд. 201</div>
+                    </td>
+                    <td>
+                      <div class="subj">Физкультура</div>
+                      <div class="teacher">Романов Д.А.</div>
+                      <div class="room">спортзал</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="time-col">
+                      <div>2 пара</div>
+                      <div
+                        style="
+                          font-size: 11px;
+                          color: var(--text-muted);
+                          font-weight: 400;
+                        "
+                      >
+                        09:45–11:20
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subj">Виртуализация</div>
+                      <div class="teacher">Громов Н.А.</div>
+                      <div class="room">лаб. 102</div>
+                    </td>
+                    <td>
+                      <div class="subj">Сетевые технологии</div>
+                      <div class="teacher">Громов Н.А.</div>
+                      <div class="room">лаб. 102</div>
+                    </td>
+                    <td>
+                      <div class="subj">ОС Windows Server</div>
+                      <div class="teacher">Громов Н.А.</div>
+                      <div class="room">комп. 106</div>
+                    </td>
+                    <td>
+                      <div class="subj">Виртуализация</div>
+                      <div class="teacher">Громов Н.А.</div>
+                      <div class="room">лаб. 102</div>
+                    </td>
+                    <td>
+                      <div class="subj">Английский язык</div>
+                      <div class="teacher">Козлова М.С.</div>
+                      <div class="room">ауд. 312</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="time-col">
+                      <div>3 пара</div>
+                      <div
+                        style="
+                          font-size: 11px;
+                          color: var(--text-muted);
+                          font-weight: 400;
+                        "
+                      >
+                        12:00–13:35
+                      </div>
+                    </td>
+                    <td>
+                      <div class="subj">Английский язык</div>
+                      <div class="teacher">Козлова М.С.</div>
+                      <div class="room">ауд. 312</div>
+                    </td>
+                    <td>
+                      <div class="subj">Администрирование</div>
+                      <div class="teacher">Громов Н.А.</div>
+                      <div class="room">лаб. 102</div>
+                    </td>
+                    <td>
+                      <div class="subj">Математика</div>
+                      <div class="teacher">Петрова И.В.</div>
+                      <div class="room">ауд. 201</div>
+                    </td>
+                    <td>
+                      <div class="subj">ОС Linux</div>
+                      <div class="teacher">Громов Н.А.</div>
+                      <div class="room">комп. 105</div>
+                    </td>
+                    <td class="empty-cell">—</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container">
+          <p class="section-label reveal">Связь с нами</p>
+          <h2 class="section-title reveal reveal-d1">Форма обратной связи</h2>
+          <div class="contact-grid">
+            <div class="contact-info">
+              <div class="contact-info-block reveal reveal-d1">
+                <div class="contact-info-icon" aria-hidden="true">📍</div>
+                <div>
+                  <div class="contact-info-label">Адрес</div>
+                  <div class="contact-info-val">
+                    г. Ставрополь, ул. Ленина, д. 415<br />Корпус А, главный
+                    вход
+                  </div>
+                </div>
+              </div>
+              <div class="contact-info-block reveal reveal-d2">
+                <div class="contact-info-icon" aria-hidden="true">📞</div>
+                <div>
+                  <div class="contact-info-label">Приёмная комиссия</div>
+                  <div class="contact-info-val">
+                    +7 (8652) 55-44-33<br />Пн–Пт, 09:00–17:00
+                  </div>
+                </div>
+              </div>
+              <div class="contact-info-block reveal reveal-d1">
+                <div class="contact-info-icon" aria-hidden="true">✉️</div>
+                <div>
+                  <div class="contact-info-label">Электронная почта</div>
+                  <div class="contact-info-val">
+                    info@spk-stav.ru<br />priem@spk-stav.ru
+                  </div>
+                </div>
+              </div>
+              <div class="contact-info-block reveal reveal-d2">
+                <div class="contact-info-icon" aria-hidden="true">🕐</div>
+                <div>
+                  <div class="contact-info-label">Режим работы</div>
+                  <div class="contact-info-val">
+                    Понедельник–Пятница: 08:00–18:00<br />Суббота: 09:00–14:00
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-wrap reveal reveal-d1" id="form-wrap">
+              <h3 class="form-title">Напишите нам</h3>
+              <p class="form-sub">Ответим в течение одного рабочего дня</p>
+              <form
+                id="feedback-form"
+                novalidate
+                aria-label="Форма обратной связи"
+              >
+                <div class="form-row">
+                  <label class="form-label" for="f-name"
+                    >Ваше имя <span aria-hidden="true">*</span></label
+                  >
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="f-name"
+                    name="name"
+                    placeholder="Иван Иванов"
+                    autocomplete="name"
+                    required
+                    aria-required="true"
+                    aria-describedby="err-name"
+                  />
+                  <div class="form-error-msg" id="err-name" role="alert">
+                    Введите имя (минимум 2 символа)
+                  </div>
+                </div>
+                <div class="form-row">
+                  <label class="form-label" for="f-email"
+                    >Электронная почта <span aria-hidden="true">*</span></label
+                  >
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="f-email"
+                    name="email"
+                    placeholder="example@mail.ru"
+                    autocomplete="email"
+                    required
+                    aria-required="true"
+                    aria-describedby="err-email"
+                  />
+                  <div class="form-error-msg" id="err-email" role="alert">
+                    Введите корректный адрес электронной почты
+                  </div>
+                </div>
+                <div class="form-row">
+                  <label class="form-label" for="f-message"
+                    >Сообщение <span aria-hidden="true">*</span></label
+                  >
+                  <textarea
+                    class="form-textarea"
+                    id="f-message"
+                    name="message"
+                    placeholder="Ваш вопрос или сообщение..."
+                    required
+                    aria-required="true"
+                    aria-describedby="err-msg"
+                  ></textarea>
+                  <div class="form-error-msg" id="err-msg" role="alert">
+                    Сообщение должно содержать минимум 10 символов
+                  </div>
+                </div>
+                <button type="submit" class="form-submit">
+                  Отправить сообщение <span aria-hidden="true">→</span>
+                </button>
+              </form>
+            </div>
+
+            <div
+              class="form-success"
+              id="form-success"
+              role="status"
+              aria-live="polite"
+            >
+              <div class="form-success-icon" aria-hidden="true">✓</div>
+              <div class="form-success-title">Сообщение сохранено!</div>
+              <div class="form-success-text">
+                Ваше обращение получено и сохранено.<br />Мы свяжемся с вами в
+                ближайшее время.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <div class="logo" style="margin-bottom: 0">
+              <div class="logo-emblem">СПК</div>
+              <div class="logo-text">
+                <div class="logo-title">Политехнический колледж</div>
+                <div class="logo-sub">Ставрополь · основан 1952</div>
+              </div>
+            </div>
+            <p class="footer-brand-desc">
+              Готовим специалистов в области цифровых технологий, информационных
+              систем и программной инженерии.
+            </p>
+          </div>
+          <nav aria-label="Разделы сайта">
+            <div class="footer-col-title">Разделы</div>
+            <ul class="footer-links">
+              <li><a class="footer-link" href="#home">Главная</a></li>
+              <li><a class="footer-link" href="#news">Новости</a></li>
+              <li>
+                <a class="footer-link" href="#specialties">Специальности</a>
+              </li>
+              <li><a class="footer-link" href="#about">О колледже</a></li>
+              <li><a class="footer-link" href="#schedule">Расписание</a></li>
+            </ul>
+          </nav>
+          <nav aria-label="Специальности">
+            <div class="footer-col-title">Специальности</div>
+            <ul class="footer-links">
+              <li>
+                <a class="footer-link" href="#specialties"
+                  >09.02.07 — ИС и ПО</a
+                >
+              </li>
+              <li>
+                <a class="footer-link" href="#specialties">10.02.05 — ИБ</a>
+              </li>
+              <li>
+                <a class="footer-link" href="#specialties"
+                  >09.02.06 — Сетевое адм.</a
+                >
+              </li>
+              <li>
+                <a class="footer-link" href="#specialties"
+                  >09.02.04 — ИС по отраслям</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div>
+            <div class="footer-col-title">Контакты</div>
+            <ul class="footer-links">
+              <li>
+                <a class="footer-link" href="tel:+78652554433"
+                  >+7 (8652) 55-44-33</a
+                >
+              </li>
+              <li>
+                <a class="footer-link" href="mailto:info@spk-stav.ru"
+                  >info@spk-stav.ru</a
+                >
+              </li>
+              <li>
+                <span class="footer-link">г. Ставрополь, ул. Ленина, 415</span>
+              </li>
+              <li><span class="footer-link">Пн–Пт 08:00–18:00</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span class="footer-copy"
+            >© 2025 Ставропольский политехнический колледж. Все права
+            защищены.</span
+          >
+          <span class="footer-made"
+            >Курсовой проект · <span>Аджамян Р.А.</span> · ПИЖ-б-о-25-1</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
