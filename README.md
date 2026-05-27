@@ -21,15 +21,13 @@
 
 ## Структура проекта
 
-college-website/
-│ index.html # Главный HTML-файл
-│ README.md # Документация проекта
-│
-├───css/
-│ style.css # Все стили сайта
-│
-└───js/
-script.js # JavaScript логика сайта
+**college-website/**
+- **index.html** - Главный HTML-файл
+- **README.md** - Документация проекта
+- **css/**
+  - style.css - Все стили сайта
+- **js/**
+  - script.js - JavaScript логика сайта
 
 ## Функциональность
 
